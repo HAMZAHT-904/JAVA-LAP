@@ -1,0 +1,21 @@
+abstract class Veichle{
+    String Car_name="Benz";
+            public abstract void car_details();
+}
+class Car1 extends Veichle{
+    public void car_details(){
+
+        System.out.println("Car_Details");
+        System.out.println("---------------");
+        System.out.println("Car_Name: Benz");
+        System.out.println("Car_Bread : mercedes");
+        System.out.println("Car_Price=200,000$");
+        System.out.println("Car_Loc= UAE");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Veichle CarObj = new Car1();
+        CarObj.car_details();
+    }
+}
