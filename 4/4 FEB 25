@@ -1,0 +1,21 @@
+abstract class Animal{
+    String dog_name="Micky";
+            public abstract void dog_details();
+}
+class Dog1 extends Animal{
+    public void dog_details(){
+
+        System.out.println("Dog_Details");
+        System.out.println("---------------");
+        System.out.println("Dog_Name" + dog_name);
+        System.out.println("Dog_Bread : German Ship");
+        System.out.println("Dog_Price=60$");
+        System.out.println("Dog_Loc= UAE");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Animal DogObj = new Dog1();
+        DogObj.dog_details();
+    }
+}
